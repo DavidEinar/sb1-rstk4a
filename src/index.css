@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  @apply bg-gray-50;
+}
+
+.drop-zone {
+  @apply border-2 border-dashed border-gray-300 rounded-lg p-8 transition-colors duration-200 ease-in-out;
+}
+
+.drop-zone.active {
+  @apply border-gray-900 bg-gray-50;
+}
+
+.progress-bar {
+  @apply h-2 rounded-full overflow-hidden bg-gray-200;
+}
+
+.progress-bar-fill {
+  @apply h-full bg-gray-900 transition-all duration-300 ease-in-out;
+}
